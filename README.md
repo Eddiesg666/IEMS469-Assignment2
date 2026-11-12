@@ -1,6 +1,5 @@
 # IEMS 469 — Assignment 2: Deep Q-Network
 
-**Assignment deadline: November 11, 2026, 11:59 PM (Chicago time).**
 
 This is an original implementation of Deep Q-Network for **CartPole-v1** and **ALE/MsPacman-v5**. DQN uses a PyTorch neural network, a bounded uniform experience-replay buffer, and a periodically synchronized target network. By default the Q-target uses the Double-DQN selection rule (a documented DQN refinement), Huber loss, and gradient clipping. There is **no** PPO, policy gradient or copied RL training framework.
 
@@ -23,7 +22,7 @@ This is an original implementation of Deep Q-Network for **CartPole-v1** and **A
 | `runs/` | Models, logs, CSV, figures and evaluation metrics generated locally |
 | `assignment2_report_DRAFT.pdf` | Explicitly incomplete report generated without training results |
 
-## 2. Setup on your Mac
+## 2. Setup on Mac
 
 Download and extract the full solution ZIP in a **new** folder, separate from Assignment 1. For example place it on your Desktop beside the previous project.
 
@@ -110,7 +109,6 @@ python dqn.py train \
   --out runs/mspacman_probe
 ```
 
-**Do not use the 3-game probe to satisfy the assignment:** those are only integration checks and the required evaluation is 500 episodes.
 
 ### Resume after an interruption
 
@@ -179,22 +177,6 @@ python build_report.py --username Eddiesg666 --repo IEMS469-Assignment2 --final
 
 The generator refuses `--final` if any required evaluation is missing or has fewer than 500 games or any required plot is missing. It includes algorithm equations, actual hyperparameters, performance statistics, edge cases, diagnostics and the extra-three-months plan. Open the PDF and review all plots and text before submitting.
 
-## 10. GitHub and submission
-
-Create a **new public repository** at `https://github.com/Eddiesg666/IEMS469-Assignment2` (you can use another exact name if desired, but also update `--repo` when building the report). The included `.gitignore` excludes bulky model checkpoints and local environments; make sure your Python source, requirements, tests, run logs, figures and final PDF are pushed.
-
-From the project folder once you've created the empty repository:
-
-```bash
-git init
-git add .
-git commit -m "Complete IEMS469 Assignment 2 DQN"
-git branch -M main
-git remote add origin https://github.com/Eddiesg666/IEMS469-Assignment2.git
-git push -u origin main
-```
-
-If `origin` already exists, use `git remote set-url origin https://github.com/Eddiesg666/IEMS469-Assignment2.git` instead of adding it again. Verify your public GitHub link before submitting. Upload the **final** `assignment2_report.pdf` to Canvas (not the draft). The assignment expressly requires a public repository and a PDF.
 
 ## Official links
 
