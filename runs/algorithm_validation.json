@@ -1,0 +1,59 @@
+{
+  "synthetic_task": "two-state terminal bandit: optimal action equals state index",
+  "q_before": [
+    [
+      -0.0044048503041267395,
+      -0.005006872117519379
+    ],
+    [
+      -0.06975094974040985,
+      0.013331107795238495
+    ]
+  ],
+  "q_after": [
+    [
+      1.0006669759750366,
+      -1.0002416372299194
+    ],
+    [
+      -1.000585675239563,
+      1.0002548694610596
+    ]
+  ],
+  "optimal_action_accuracy": 1.0,
+  "bootstrap_target_example": [
+    1.0,
+    5.75,
+    39.0
+  ],
+  "expected_bootstrap_target": [
+    1.0,
+    5.75,
+    39.0
+  ],
+  "gamma_zero_target_example": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "terminal_target_equals_immediate_reward": true,
+  "epsilon_at_step_0": 1.0,
+  "epsilon_at_step_50": 0.55,
+  "epsilon_at_step_100": 0.09999999999999998,
+  "replay_sampling_counts": [
+    754,
+    838,
+    807,
+    801,
+    805,
+    792,
+    839,
+    785,
+    804,
+    775
+  ],
+  "replay_sampling_max_relative_deviation": 0.057499999999999996,
+  "replay_expected_count_per_slot": 800.0,
+  "replay_capacity_bounded": true,
+  "all_tests_pass": true
+}
